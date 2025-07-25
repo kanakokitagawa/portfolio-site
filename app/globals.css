@@ -67,6 +67,80 @@ a {
   transform: rotate(360deg);
 }
 
+.nav-link {
+  font-size: 1.1rem; /* 約17.6px - デフォルトより少し大きく */
+}
+
+.service-polaroid-link {
+  text-decoration: none;
+}
+
+.service-polaroid {
+  width: 250px; /* ポラロイドの幅 */
+  background-color: #ffffff; /* 白いフレーム */
+  border-radius: 5px; /* 角丸 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影 */
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+
+.service-polaroid:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.polaroid-image-container {
+  width: 100%;
+  padding-top: 100%; /* 1:1のアスペクト比 */
+  position: relative;
+  overflow: hidden;
+}
+
+.service-polaroid-image {
+  filter: grayscale(100%); /* モノトーン */
+  transition: filter 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-polaroid:hover .service-polaroid-image {
+  filter: grayscale(0%); /* ホバーでカラーに */
+}
+
+.polaroid-text-area {
+  text-align: center;
+}
+
+.polaroid-light {
+  width: 50px;
+  height: 10px;
+  background-color: transparent; /* 初期状態は透明 */
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: absolute;
+  top: 0; /* ポラロイドの上部に配置 */
+  z-index: 1; /* 画像より手前に */
+}
+
+.service-polaroid:hover .polaroid-light {
+  background-color: #d2d93a; /* LEDの色 */
+  box-shadow: 0 0 15px 5px rgba(210, 217, 58, 0.8); /* LEDの光 */
+}
+
+.service-polaroid h5 {
+  position: relative;
+  z-index: 2; /* 画像より手前に */
+  background-color: rgba(255, 255, 255, 0.8); /* タイトル背景 */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem; /* 下からの余白 */
+}
+
 .square-card {
   position: relative;
   width: 100%;
@@ -139,6 +213,28 @@ a {
 
 .ratio iframe {
   box-shadow: none; /* 動画の影を削除 */
+}
+
+.service-detail-bg {
+  min-height: calc(100vh - 100px); /* ヘッダーとフッターの高さ分を引く */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 背景を固定 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 50px 0; /* 上下の余白 */
+}
+
+.service-detail-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 黒の不透明度50%オーバーレイ */
+  z-index: 0;
 }
 
 .square-card {
