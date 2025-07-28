@@ -89,7 +89,7 @@ export const worksData = [
     id: 'motion-logo-design-2',
     title: 'モーションLogo Design 2',
     category: 'logo',
-    image: '/works/logo/Logo2-sumnail.jpg',
+    image: '/works/logo/logo2-sumnail.jpg',
     videoUrl: 'https://www.youtube.com/embed/GMhkg5GtV2A',
     description: '静止画のロゴが、生命を吹き込まれたかのように動き出す。それは単なるアニメーションではなく、ブランドの物語を語り、感情を揺さぶる体験へと昇華します。PVやWebサイトのオープニング・エンディング、コマーシャルなど、あらゆるメディアでロゴが躍動し、見る人の記憶に深く刻み込まれる。ロゴが動き出すことで生まれる、唯一無二のブランド体験を創造します。',
   },

@@ -65,8 +65,8 @@ const WorkDetailPage = async ({ params }) => {
             )
           )}
 
-          <div className="bg-light p-4 rounded">
-            <p className="lead">{work.description || '詳細な説明は現在準備中です。'}</p>
+          <div className="p-4 rounded text-dark">
+            <p className="lead">{work.description}</p>
           </div>
           <div className="mt-4">
             <Link href="/works/logo" className="btn btn-outline-secondary">&larr; Back to Logo Works</Link>

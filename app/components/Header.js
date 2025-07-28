@@ -3,7 +3,7 @@ import Logo from './Logo';
 
 const Header = () => {
   return (
-    <header className="p-3 mb-3 border-bottom">
+    <header className="p-3 mb-3 border-bottom" style={{ position: 'relative', zIndex: 10 }}>
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-between">
           <Logo />

@@ -6,14 +6,16 @@ const AboutPage = () => {
       className="about-bg"
       style={{
         backgroundImage: `url(/about/about-bg.jpg)`,
+        backgroundColor: '#ccd2de',
+        backgroundBlendMode: 'overlay',
       }}
     >
       <div className="about-overlay"></div>
-      <div className="container py-5 position-relative z-index-1 text-white">
+      <div className="container py-5 position-relative z-index-1">
         <h1 className="mb-4 text-center display-4 fw-bold">Kanakina Design Studioについて</h1>
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <div className="bg-dark bg-opacity-75 p-4 rounded shadow-lg">
+            <div className="p-4 rounded shadow-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
               <p><strong>Kanakina Design Studio: あなたのビジョンを、私の創造力で形に。</strong></p>
               <p>ブランディングデザイナーとして、アイデアを影響力のある現実へと変えるために、包括的なアプローチで取り組んでいます。私の情熱は、様々なクリエイティブ領域でユニークで一貫性のある体験を創り出すことにあります。</p>
               <p>私の専門知識は、コンセプトから完成まで環境を丁寧に作り上げる<strong>インテリアデザイン</strong>に及びます。最近の実績としては、兵庫県の元宝塚ホテル跡地に新設された保育園のあらゆる側面をデザインしました。これには、特注の下駄箱のデザインやオーダーメイドの門扉用のアンティーク鉄の調達、素材の選定、各部屋のサインデザインなどが含まれます。また、書き込み可能なアートボードの壁や、魅力的な絵本コーナーの設置、ロビーのカーテンやオフィスの家具の選定まで監修し、細部に至るまで調和のとれた空間づくりに貢献しました。</p>

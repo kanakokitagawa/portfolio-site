@@ -13,7 +13,7 @@ const ServicesPage = () => {
       <h1 className="mb-5">My Services</h1>
       <div className="row justify-content-center g-4">
         {servicesData.map((service) => (
-          <div key={service.id} className="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+          <div key={service.id} className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
             <Link href={`/services/${service.id}`} className="text-decoration-none service-polaroid-link">
               <div className="service-polaroid position-relative shadow-lg">
                 <div className="polaroid-image-container">
