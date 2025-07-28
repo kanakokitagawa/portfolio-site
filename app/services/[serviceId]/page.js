@@ -38,7 +38,7 @@ const ServiceDetailPage = ({ params }) => {
     >
       <div className="service-detail-overlay"></div>
       <div className="container py-5 position-relative z-index-1">
-        <h1 className="mb-4 text-center display-4 fw-bold">{service.title}</h1>
+        
         
         <div className="row justify-content-center">
           <div className="col-lg-8">
