@@ -282,17 +282,12 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+.animated-title {
+  font-size: 6rem; /* PCサイズのデフォルトフォントサイズ */
+}
+
+@media (max-width: 768px) {
   .animated-title {
-    font-size: 3rem !important;
+    font-size: 4rem !important; /* iPhone 16 Proを含むスマホサイズで調整 */
   }
-}
-
-.home-container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.home-button-container {
-  margin-top: 2rem;
 }

@@ -6,7 +6,7 @@ export default function AnimatedTitle() {
   const title = ["Kanakina", "Design", "Studio"];
 
   return (
-    <h1 className="fw-bold animated-title" style={{ color: '#FFFFFF', lineHeight: '1.2', fontSize: '6rem' }}>
+    <h1 className="fw-bold animated-title" style={{ color: '#FFFFFF', lineHeight: '1.2' }}>
       {title.map((word, lineIndex) => (
         <span key={lineIndex} style={{ display: 'block' }}>
           {word.split('').map((char, charIndex) => (

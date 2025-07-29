@@ -23,7 +23,7 @@ const Header = () => {
           </ul>
 
           <div className="col-12 col-lg-auto d-flex justify-content-center align-items-center">
-            <a href="https://www.instagram.com/music_kanako/" target="_blank" rel="noopener noreferrer" className="text-white me-3">
+            <a href="https://www.instagram.com/kanakina_design_studio/" target="_blank" rel="noopener noreferrer" className="text-white me-3">
               <i className="bi bi-instagram fs-3"></i>
             </a>
             <a href="mailto:kanakanarose@gmail.com" className="text-white me-3">
@@ -32,7 +32,7 @@ const Header = () => {
             <a href="https://note.com/kanakinaa" target="_blank" rel="noopener noreferrer" className="text-white me-3">
               <i className="bi bi-file-text-fill fs-3"></i>
             </a>
-            <a href="https://admin.thebase.com/dashboard" target="_blank" rel="noopener noreferrer" className="text-white">
+            <a href="https://kanakina.base.shop/" target="_blank" rel="noopener noreferrer" className="text-white">
               <i className="bi bi-cart-fill fs-3"></i>
             </a>
           </div>
